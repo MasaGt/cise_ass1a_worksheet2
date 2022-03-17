@@ -40,10 +40,12 @@ jobs:
         
       - name: Run the tests
         run: npm test
-          working-directory: ./frontend
+        working-directory: ./frontend
+        
         
       - name: Build
         run: npm run build
+        working-directory: ./frontend
 
       # Runs a single command using the runners shell
       #- name: Run a one-line script
